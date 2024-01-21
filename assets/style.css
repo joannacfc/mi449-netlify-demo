@@ -3,18 +3,25 @@ h1 {
     text-align: center;
     line-height: 5;
     letter-spacing: 1px;
+    font-family: 'Verdana', sans-serif;
     color: #808080;
   }
 
 body {
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
+    text-align: left;
+    line-height: 5;
+    letter-spacing: 1px;
+    margin: 10;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
     font-family: 'Verdana', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #1f1e1e; /* 灰階背景色 */
+    color: #808080;
+    background-color: #1f1e1e;
 }
 
 .title-container {
