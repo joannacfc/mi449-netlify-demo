@@ -1,9 +1,6 @@
 module.exports = function(eleventyConfig) {
-    // Return your Object options:
-    return {
-      dir: {
-        input: "views",
-        output: "dist"
-      }
-    }
-  };
+    // This will copy these folders to the output without modifying them at all
+    eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("image");
+  }
+  
