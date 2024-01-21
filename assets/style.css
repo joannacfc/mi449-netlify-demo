@@ -9,7 +9,7 @@ body {
     background-color: #1f1e1e;
 }
 
-body.earth img src image/earth.png {
+body img[src="image/earth.png"] {
     width: 100px;
     height: auto;
     margin-top: 300px;
@@ -17,23 +17,7 @@ body.earth img src image/earth.png {
     position: relative;
 }
 
-body.earth img src image/moon.png {
-    width: 25px;
-    height: auto;
-    margin-top: 300px;
-    margin-left: 450px; /* 左邊距 */
-    position: relative;
-}
-
-body.moon img src image/earth.png {
-    width: 100px;
-    height: auto;
-    margin-top: 300px;
-    margin-left: 20px; /* 左邊距 */
-    position: relative;
-}
-
-body.moon img src image/moon.png {
+body img[src="image/moon.png"] {
     width: 25px;
     height: auto;
     margin-top: 300px;
