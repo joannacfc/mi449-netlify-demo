@@ -27,21 +27,3 @@ body {
     margin-bottom: 10px;
     color: #F0F0F0;
 }
-
-main {
-    text-align: center;
-}
-
-.earth img src image/earth.png {
-    width: 60px;
-    height: 60px;
-    left: calc(50% - 60px);
-    top: calc(50% - 60px);
-}
-
-.moon img src image/earth.png {
-    width: 25px;
-    height: 25px;
-    left: calc(50% - 25px);
-    top: calc(50% - 25px);
-}
