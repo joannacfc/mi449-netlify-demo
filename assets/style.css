@@ -2,7 +2,9 @@ h1 {
     color: #F0F0F0;
     font-family: 'Arial', sans-serif;
     font-size: 50px;
-    margin: 100px 0 0 400px; /* 調整上方、左方邊距 */
+    margin-top: 100px;
+    position: relative;
+    left: 10px
 }
 
 body {
@@ -12,17 +14,17 @@ body {
 body img[src="image/earth.png"] {
     width: 100px;
     height: auto;
-    margin-top: 300px;
-    margin-left: 20px; /* 左邊距 */
+    margin-top: 160px;
     position: relative;
+    left: 10px
 }
 
 body img[src="image/moon.png"] {
     width: 25px;
     height: auto;
-    margin-top: 300px;
-    margin-left: 450px; /* 左邊距 */
+    margin-top: 160px;
     position: relative;
+    right: 10px
 }
 
 h2.description {
@@ -30,7 +32,18 @@ h2.description {
     font-family: 'Arial', sans-serif;
     font-size: 15px;
     align-items: left;
-    margin: 130px 0 0 400px; /* 調整上方、左方邊距 */
+    margin-top: 130px;
     position: relative;
-    z-index: 2; /* 提高 z-index，使描述位於圖片之上 */
+    left: 10px
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container img {
+    margin: 0 10px;
 }
