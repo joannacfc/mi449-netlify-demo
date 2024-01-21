@@ -1,33 +1,47 @@
 h1 {
+    color: #F0F0F0.;
+    font-family: 'Arial', sans-serif;
     font-size: 80px;
     text-align: center;
     line-height: 5;
     letter-spacing: 1px;
-    font-family: 'Verdana', sans-serif;
-    color: #808080;
+    margin: 0;
   }
 
 body {
-    font-size: 5px;
-    text-align: left;
-    margin: 10;
-    padding: 10px;
-    height: px;
-    width: px;
-    font-family: 'Verdana', sans-serif;
+    background-color: #1f1e1e;
+    color: #F0F0F0;
+    font-family: 'Arial', sans-serif;
+    font-size: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #808080;
-    background-color: #1f1e1e;
-}
-
-.title-container {
-    text-align: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
 }
 
 .title {
-    font-size: 36px; /* 字體大一點 */
-    margin-bottom: 10px; /* 下移一點 */
-    color: #F0F0F0; /* 白灰色字體顏色 */
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #F0F0F0;
+}
+
+main {
+    text-align: center;
+}
+
+.earth {
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+}
+
+.moon {
+    width: 50px;
+    height: 50px;
+    left: calc(60% - 25px);
+    top: calc(70% - 25px);
 }
