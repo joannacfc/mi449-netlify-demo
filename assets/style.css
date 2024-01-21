@@ -2,14 +2,19 @@ h1 {
     color: #F0F0F0;
     font-family: 'Arial', sans-serif;
     font-size: 50px;
-    text-align: center;
+    text-align: left; /* 左對齊 */
     line-height: 5;
     letter-spacing: 1px;
-    margin: 0;
+    margin: 20px 0 0 20px; /* 調整上方、左方邊距 */
+}
+
+body {
+    background-color: #1f1e1e;
 }
 
 body.earth {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -17,16 +22,14 @@ body.earth {
     position: relative;
 }
 
-body.earth img[src="image/earth.png"] {
-    width: 300px; 
-    height: auto;
-    position: absolute;
-    left: calc(50% - 450px); /* 調整左邊距，讓圖片在中央 */
-}
-
+body.earth img[src="image/earth.png"],
 body.earth img[src="image/moon.png"] {
     width: 90px;
     height: auto;
+}
+
+body.earth img[src="image/earth.png"] {
+    margin-left: 20px; /* 左邊距 */
 }
 
 h2.description {
