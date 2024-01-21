@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #808080; /* 灰階背景色 */
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px; /* 字體大一點 */
+    margin-bottom: 10px; /* 下移一點 */
+    color: #F0F0F0; /* 白灰色字體顏色 */
+}
