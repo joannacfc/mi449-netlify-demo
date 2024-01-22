@@ -9,5 +9,4 @@ module.exports = function(eleventyConfig) {
         output: "www",
       }
     };
-  }
-  
+  }  
