@@ -1,9 +1,16 @@
+.h1-box {
+    display: flex;
+    justify-content: center;
+    width: 40%; /* 調整 h1 box 寬度為網頁的 40% */
+    margin: 100px auto 0; /* 上方距離 100px，水平置中 */
+}
+
 h1 {
     color: #F0F0F0;
     font-family: 'Arial', sans-serif;
-    font-size: 40px;
-    margin-top: 100px;
-    text-align: left; /* 讓 h1 向左對齊 */
+    font-size: 30px;
+    text-align: left; /* 向左對齊 */
+    margin: 0; /* 清除預設 margin */
 }
 
 .description-box {
@@ -29,8 +36,12 @@ body {
 main {
     display: flex;
     justify-content: center;
-    align-items: center; /* 將 main 內容置中 */
-    flex-direction: column; /* 讓內容在垂直方向上排列 */
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body img[src="image/earth.png"],
@@ -38,9 +49,5 @@ body img[src="image/moon.png"] {
     width: 25vw;
     height: auto; /* 讓高度自動適應寬度比例 */
     margin-top: 30px; /* 調整圖片上方距離 */
-}
-
-/* 調整 moon 圖片的左方距離，使其水平對齊 */
-body img[src="image/moon.png"] {
-    margin-left: 5vw;
+    margin-left: 5px; /* 修正兩張圖片的水平對齊 */
 }
