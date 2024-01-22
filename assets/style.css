@@ -1,16 +1,10 @@
-.h1-box {
-    display: flex;
-    justify-content: center;
-    width: 40%; /* 調整 h1 box 寬度為網頁的 40% */
-    margin: 100px auto 0; /* 上方距離 100px，水平置中 */
-}
-
 h1 {
     color: #F0F0F0;
     font-family: 'Arial', sans-serif;
     font-size: 30px;
     text-align: left; /* 向左對齊 */
-    margin: 0; /* 清除預設 margin */
+    width: 40%; /* 調整 h1 box 寬度為網頁的 40% */
+    margin: 150px auto 0; /* 上方距離 150px，水平置中 */
 }
 
 .description-box {
@@ -18,7 +12,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .description {
@@ -30,24 +24,24 @@ h1 {
 
 body {
     background-color: #1f1e1e;
-    position: relative;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* 使內容水平置中 */
+    align-items: center; /* 使內容垂直置中 */
 }
 
-.image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body img[src="image/earth.png"],
-body img[src="image/moon.png"] {
-    width: 25vw;
+body img[src="image/earth.png"] {
+    width: 300px; /* 調整 earth 圖片寬度為網頁寬度的 30% */
     height: auto; /* 讓高度自動適應寬度比例 */
-    margin-top: 30px; /* 調整圖片上方距離 */
-    margin-left: 5px; /* 修正兩張圖片的水平對齊 */
+    margin-top: 10px; /* 調整圖片上方距離 */
+    margin-left: 28vw;
+}
+
+body img[src="image/moon.png"] {
+    width: 100px; /* 調整 moon 圖片寬度為網頁寬度的 10% */
+    height: auto; /* 讓高度自動適應寬度比例 */
+    margin-left: 5px; /* 調整左右位置 */
+    align-self: flex-start; /* 將 moon 圖片垂直對齊到 flex 容器的開頭（上方） */
 }
